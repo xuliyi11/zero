@@ -1,5 +1,7 @@
 package com.model;
 
+import com.aop.SkipNullCheck;
+
 /**
  * Created by chenyuan on 2018-04-15.
  */
