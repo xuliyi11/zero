@@ -23,10 +23,4 @@ public class RequestDispatcher extends HttpServlet {
         ServletConfig config = getServletConfig();
         LOGGER.info(config.getServletName());
     }
-
-    /*@Override
-    public void doPost(HttpServletRequest req, HttpServletResponse resp)throws ServletException{
-        LOGGER.info(req.getMethod());
-
-    }*/
 }
