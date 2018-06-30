@@ -12,11 +12,14 @@
 
     <context:component-scan base-package="com.service"/>
     <context:component-scan base-package="com.aop"/>
+    <context:component-scan base-package="com.CallableHandle"/>
 
-    <context:property-placeholder location=""
+    <context:property-placeholder location="classpath*:runtime.properties"/>
 
     <!--加载 db配置文件-->
     <import resource="spring-config-db.xml"/>
+    <!--加载 redis配置文件-->
     <import resource="spring-config-redis.xml"/>
-
+    <!--加载线程池配置文件-->
+    <import resource="ThreadPoolHandle.xml"/>
 </beans>

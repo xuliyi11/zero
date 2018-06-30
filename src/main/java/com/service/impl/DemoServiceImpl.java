@@ -14,7 +14,7 @@ import java.util.List;
 /**
  * Created by xly on 2018/5/9.
  */
-@Service
+@Service(value = "demoService")
 public class DemoServiceImpl implements DemoService {
 
     private static final Logger logger = LoggerFactory.getLogger(DemoServiceImpl.class);

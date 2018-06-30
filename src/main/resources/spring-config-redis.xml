@@ -25,5 +25,5 @@
         <!--<constructor-arg value="1234" />
         <constructor-arg value="0" />-->
     </bean>
-    <bean id="redisUtils" class="com.redis.RedisUtils"/>
+    <bean id="redisUtils" class="com.redis.ZeroRedis"/>
 </beans>
