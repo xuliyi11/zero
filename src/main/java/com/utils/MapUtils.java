@@ -27,11 +27,15 @@ public class MapUtils {
         }
     }
 
-    public static final Map<String,Object> string2Map( String string) throws IOException {
+    public static  Map<String,Object> string2Map( String string) throws IOException {
         return objectMapper.readValue(string, new TypeReference<HashMap<String,Object>>() {});
     }
 
-    public static final List<User> string2List(String string) throws IOException {
+    public static  List<User> string2List(String string) throws IOException {
         return objectMapper.readValue(string, new TypeReference<List<Object>>() {});
+    }
+
+    public static Object String2Obj(String str , TypeReference typeReference) throws IOException {
+        return objectMapper.readValue(str, typeReference);
     }
 }

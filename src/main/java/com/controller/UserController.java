@@ -3,6 +3,7 @@ package com.controller;
 import com.CallableHandle.CallableHandle;
 import com.alibaba.fastjson.JSONObject;
 import com.aop.NullParamAop;
+import com.aop.redisAop.RedisAnnotation;
 import com.handle.ThreadPoolHandle;
 import com.mapper.UserMapper;
 import com.domain.User;
@@ -54,6 +55,7 @@ public class UserController {
 
     @RequestMapping(value = "/user")
     @ResponseBody
+    @RedisAnnotation
     public List<User> gerAllUser(@RequestBody  User user) throws Throwable {
         Long nx = zeroRedis.getJedis().setnx("xuliyi","name");
         logger.info(String.valueOf(nx) );
@@ -64,6 +66,7 @@ public class UserController {
 
     @RequestMapping(value = "/user1", method = {RequestMethod.GET,RequestMethod.POST})
     @ResponseBody
+    @RedisAnnotation
     public List<User> gerAllUser1(@RequestParam Integer id, @RequestParam String userName) throws IOException {
         List<User> userList;
         if (zeroRedis.exists(REDIS_ALL_USER_KEY)){

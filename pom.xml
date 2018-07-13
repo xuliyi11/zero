@@ -11,7 +11,7 @@
   <url>http://maven.apache.org</url>
   <properties>
     <!-- spring版本号 -->
-    <spring.version>4.3.1.RELEASE</spring.version>
+    <spring.version>4.3.11.RELEASE</spring.version>
     <!-- mybatis版本号 -->
     <mybatis.version>3.2.6</mybatis.version>
     <!-- log4j日志文件管理包版本 -->
@@ -364,6 +364,13 @@
       <version>1.4.7</version>
     </dependency>
 
+
+    <!--aspectJ依赖-->
+    <dependency>
+      <groupId>org.aspectj</groupId>
+      <artifactId>aspectjweaver</artifactId>
+      <version>1.8.13</version>
+    </dependency>
     <!-- itext -->
 
     <dependency>
