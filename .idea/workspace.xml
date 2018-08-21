@@ -6,35 +6,13 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="25a91a70-d71c-498d-9289-aad8e6eea980" name="Default" comment="提交代码">
+    <list default="true" id="25a91a70-d71c-498d-9289-aad8e6eea980" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/controller/UserController.java" afterPath="$PROJECT_DIR$/src/main/java/com/controller/UserController.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mapper/UserMapper.java" afterPath="$PROJECT_DIR$/src/main/java/com/mapper/UserMapper.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mapperXml/UserMapper.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/model/User.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application-context.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/mybatis-config.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/properties/log4j.properties" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/springmvc-config.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" />
-      <change beforePath="$PROJECT_DIR$/target/ROOT/WEB-INF/classes/application-context.xml" afterPath="" />
       <change beforePath="$PROJECT_DIR$/target/ROOT/WEB-INF/classes/com/controller/UserController.class" afterPath="$PROJECT_DIR$/target/ROOT/WEB-INF/classes/com/controller/UserController.class" />
       <change beforePath="$PROJECT_DIR$/target/ROOT/WEB-INF/classes/com/mapper/UserMapper.class" afterPath="$PROJECT_DIR$/target/ROOT/WEB-INF/classes/com/mapper/UserMapper.class" />
-      <change beforePath="$PROJECT_DIR$/target/ROOT/WEB-INF/classes/com/mapperXml/UserMapper.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/ROOT/WEB-INF/classes/com/model/User.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/ROOT/WEB-INF/classes/mybatis-config.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/ROOT/WEB-INF/classes/properties/log4j.properties" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/ROOT/WEB-INF/classes/springmvc-config.xml" afterPath="" />
       <change beforePath="$PROJECT_DIR$/target/ROOT/WEB-INF/web.xml" afterPath="$PROJECT_DIR$/target/ROOT/WEB-INF/web.xml" />
-      <change beforePath="$PROJECT_DIR$/target/classes/application-context.xml" afterPath="" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/controller/UserController.class" afterPath="$PROJECT_DIR$/target/classes/com/controller/UserController.class" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/mapper/UserMapper.class" afterPath="$PROJECT_DIR$/target/classes/com/mapper/UserMapper.class" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/mapperXml/UserMapper.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/model/User.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/classes/mybatis-config.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/classes/properties/log4j.properties" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/classes/springmvc-config.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/zero.iml" afterPath="$PROJECT_DIR$/zero.iml" />
     </list>
     <ignored path="zero.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -1050,7 +1028,7 @@
       <workItem from="1534688962190" duration="4201000" />
       <workItem from="1534732394359" duration="3917000" />
       <workItem from="1534817160705" duration="10236000" />
-      <workItem from="1534845560835" duration="2950000" />
+      <workItem from="1534845560835" duration="2979000" />
     </task>
     <task id="LOCAL-00001" summary="提交代码">
       <created>1534834073036</created>
@@ -1059,11 +1037,18 @@
       <option name="project" value="LOCAL" />
       <updated>1534834073036</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="提交代码">
+      <created>1534848922181</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1534848922181</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="51410000" />
+    <option name="totallyTimeSpent" value="51439000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-9" y="-9" width="1938" height="1050" extended-state="6" />
