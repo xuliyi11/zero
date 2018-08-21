@@ -1,7 +1,6 @@
 package com.mapper;
 
-import com.model.User;
-import org.springframework.stereotype.Service;
+import com.domain.User;
 
 import java.util.List;
 
