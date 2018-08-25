@@ -9,19 +9,28 @@
 
     <display-name>Archetype Created Web Application</display-name>
 
-    <!--自定义 filter-->
-    <filter>
+    <!--自定义 RequestFilter filter-->
+    <!--<filter>
         <filter-name>definedFilter</filter-name>
         <filter-class>com.filter.RequestFilter</filter-class>
-        <init-param>
-            <param-name>filterParam</param-name>
-            <param-value>testFilter</param-value>
-        </init-param>
     </filter>
     <filter-mapping>
         <filter-name>definedFilter</filter-name>
-        <url-pattern>/</url-pattern>
-    </filter-mapping>
+        <url-pattern>/*</url-pattern>
+    </filter-mapping>-->
+
+    <!-- 自定义 TestFilter filter 方法-->
+
+    <!--<filter>
+        <filter-name>TestFilter</filter-name>
+        <filter-class>com.filter.TestFilter</filter-class>
+    </filter>
+    <filter-mapping>
+        <filter-name>TestFilter</filter-name>
+        <url-pattern>/*</url-pattern>
+    </filter-mapping>-->
+
+
 
     <!-- spring容器配置 -->
     <listener>
@@ -50,7 +59,6 @@
         <filter-name>encodingFilter</filter-name>
         <url-pattern>/*</url-pattern>
     </filter-mapping>
-
 
 
     <!-- 加载log4j配置文件 -->

@@ -4,6 +4,7 @@ import com.mapper.UserMapper;
 import com.domain.User;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.RequestAttribute;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
@@ -21,7 +22,7 @@ public class UserController {
 
     @RequestMapping(value = "/user")
     @ResponseBody
-    public List<User> gerAllUser(@RequestParam Integer id){
-        return userMapper.selectAll();
+    public List<User> gerAllUser(@RequestAttribute int name) {
+        return userMapper.selectAll(1123);
     }
 }

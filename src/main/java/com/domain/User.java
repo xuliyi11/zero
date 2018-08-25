@@ -4,9 +4,9 @@ package com.domain;
  * Created by chenyuan on 2018-04-15.
  */
 public class User {
-    Integer id;
-    String userName;
-    Integer userAge;
+    private Integer id;
+    private String userName;
+    private Integer userAge;
 
     public Integer getId() {
         return id;

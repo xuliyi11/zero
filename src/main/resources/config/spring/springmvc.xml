@@ -13,6 +13,13 @@
 
     <mvc:annotation-driven/>
 
+    <!--mvc 拦截器配置-->
+    <mvc:interceptors>
+        <bean class="com.interceptor.HttpEndingInterceptor"/>
+        <bean class="com.interceptor.RequestParamInterceptor"/>
+    </mvc:interceptors>
+
+
     <!--扫描 Controller 注解-->
     <context:component-scan base-package="com.controller"/>
 
