@@ -1,12 +1,18 @@
 package com.domain;
 
+import org.apache.ibatis.type.Alias;
+
 /**
  * Created by chenyuan on 2018-04-15.
  */
+@Alias("user")
 public class User {
+
+    //主键id
     private Integer id;
-    private String userName;
-    private Integer userAge;
+
+    //用户姓名
+    private String name;
 
     public Integer getId() {
         return id;
@@ -16,19 +22,13 @@ public class User {
         this.id = id;
     }
 
-    public String getUserName() {
-        return userName;
+    public String getName() {
+        return name;
     }
 
-    public void setUserName(String userName) {
-        this.userName = userName;
+    public void setName(String name) {
+        this.name = name;
     }
 
-    public Integer getUserAge() {
-        return userAge;
-    }
 
-    public void setUserAge(Integer userAge) {
-        this.userAge = userAge;
-    }
 }

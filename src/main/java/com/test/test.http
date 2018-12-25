@@ -1,0 +1,22 @@
+##注意点 1、多个请求之间一定需要使用 ##分开
+##  2、可以直接绑定机器的IP进行请求，但是Host一定需要配置，否则访问出错
+##  3、根据接口的具体请求方式 选择 GET 、POST
+##  4、使用POST 方法需要注意，参数需要和上面的属性有一个空格
+
+######POST 请求示例
+
+POST  http://10.181.174.144/getChatWelcomeMsg
+Host: raven.m.jd.care
+Content-Type: application/x-www-form-urlencoded
+
+body={"venderId":"730631","waiter":"ztj666test","status":"1"}&pin=1231t111
+
+###
+
+##GET 请求示例
+
+GET  http://10.181.174.144/getChatWelcomeMsg?body={"venderId":"730631","waiter":"ztj666test","status":"1"}&pin=1231t111
+Host: raven.m.jd.care
+Content-Type: application/x-www-form-urlencoded
+
+#####

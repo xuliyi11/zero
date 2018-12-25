@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd http://mybatis.org/schema/mybatis-spring http://mybatis.org/schema/mybatis-spring.xsd">
+
+
+    <!--write into master db-->
+    <bean id="master" class="org.apache.ibatis.datasource.pooled.PooledDataSource">
+        <property name="driver" value="${mysql.driver}"/>
+        <property name="url" value="${mysql.url}"/>
+        <property name="password" value="${mysql.password}"/>
+        <property name="username" value="root"/>
+    </bean>
+
+    <!--read from slave db-->
+    <bean id="slave" class="org.apache.ibatis.datasource.pooled.PooledDataSource">
+        <property name="driver" value="${mysql.driver}"/>
+        <property name="url" value="${mysql.url.slave}"/>
+        <property name="password" value="${mysql.password}"/>
+        <property name="username" value="root"/>
+    </bean>
+
+    <bean id="dataSource" class="com.config.datasource.DynamicDataSource">
+        <property name="targetDataSources">
+            <map key-type="java.lang.String">
+                <entry key="master" value-ref="master"/>
+                <entry key="slave" value-ref="slave"/>
+            </map>
+        </property>
+        <property name="defaultTargetDataSource" ref="master"/>
+    </bean>
+
+
+    <bean id="sqlSessionFactory" class="org.mybatis.spring.SqlSessionFactoryBean">
+        <property name="configLocation" value="classpath:config/mybatis.xml"/>
+        <property name="dataSource" ref="dataSource"/>
+        <property name="mapperLocations" value="classpath*:config/sql/**/*.xml"/>
+        <property name="typeAliasesPackage" value="com.domain"/>
+    </bean>
+
+
+    <bean class="org.mybatis.spring.mapper.MapperScannerConfigurer">
+        <property name="basePackage" value="com.mapper"/>
+    </bean>
+
+
+</beans>
