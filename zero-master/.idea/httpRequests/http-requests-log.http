@@ -1,0 +1,51 @@
+GET http://192.168.0.123:8080/user?name=123
+Content-Type: application/x-www-form-urlencoded
+
+<> 2018-11-01T100717.200.json
+
+###
+
+GET http://192.168.0.123/user?name=123
+Content-Type: application/x-www-form-urlencoded
+
+###
+
+GET http://192.168.0.123:8080/user?name=123
+Content-Type: application/x-www-form-urlencoded
+
+<> 2018-11-01T094107.200.json
+
+###
+
+GET http://localhost:8080/user?name=123
+Content-Type: application/x-www-form-urlencoded
+
+<> 2018-11-01T093803.200.json
+
+###
+
+GET http://localhost:8080/user?name=123
+Content-Type: application/x-www-form-urlencoded
+
+<> 2018-11-01T092954.200.json
+
+###
+
+GET http://localhost:8080/user?name=123
+Host:
+Content-Type: application/x-www-form-urlencoded
+
+<> 2018-11-01T092946.200.json
+
+###
+
+POST http://localhost:8080/user
+Host:
+Content-Type: application/x-www-form-urlencoded
+
+body={"name":123}
+
+<> 2018-11-01T091342.400.html
+
+###
+
